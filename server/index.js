@@ -29,7 +29,7 @@ dotenv.config();
 //     credentials: true
 // }));
 app.use(cors({
-    origin: ["http://localhost:3000","https://shiny-cranachan-d17576.netlify.app/"],
+    origin: ["http://localhost:3000","https://spiffy-crepe-2eafc0.netlify.app/"],
     credentials: true
 }));
 // app.use(express.static(path.join(__dirname, 'uploads')));
