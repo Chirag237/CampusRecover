@@ -50,8 +50,6 @@ app.use(function(req, res, next) {
 // app.use(bodyParser.json())
 // app.use(bodyParser.urlencoded({ extended: true }));
 //Data parsing
-var __filename = url.parse(process.cwd() + "/" + (process.argv[1] || ""));
-__filename = path.resolve(__filename.pathname);
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 // app.use(express.urlencoded({extended:false}))
