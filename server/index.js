@@ -34,7 +34,7 @@ dotenv.config();
 // }));
 app.use(function(req, res, next) {
   // res.header("Access-Control-Allow-Origin", "*");
-  const allowedOrigins = ['http://localhost:3000', 'https://spiffy-crepe-2eafc0.netlify.app'];
+  const allowedOrigins = ['http://localhost:3000', 'https://nimble-brigadeiros-5fb66e.netlify.app/'];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
        res.setHeader('Access-Control-Allow-Origin', origin);
@@ -50,6 +50,8 @@ app.use(function(req, res, next) {
 // app.use(bodyParser.json())
 // app.use(bodyParser.urlencoded({ extended: true }));
 //Data parsing
+var __filename = url.parse(process.cwd() + "/" + (process.argv[1] || ""));
+__filename = path.resolve(__filename.pathname);
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 // app.use(express.urlencoded({extended:false}))
