@@ -34,7 +34,7 @@ dotenv.config();
 // }));
 app.use(function(req, res, next) {
   // res.header("Access-Control-Allow-Origin", "*");
-  const allowedOrigins = ['http://localhost:3000', 'https://nimble-brigadeiros-5fb66e.netlify.app/'];
+  const allowedOrigins = ['http://localhost:3000', 'https://nimble-brigadeiros-5fb66e.netlify.app/', 'https://melodic-khapse-860fdf.netlify.app/'];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
        res.setHeader('Access-Control-Allow-Origin', origin);
